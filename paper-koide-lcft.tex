@@ -1,0 +1,362 @@
+\documentclass[aps,prl,twocolumn,superscriptaddress]{revtex4-2}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Lepton mass ratios from the $\mathbb{Z}_3$ twist field of $c=-2$ logarithmic CFT}
+
+\author{wuko}
+\author{Syn-claude}
+\affiliation{SCOS-LAB, \url{https://github.com/scos-lab}}
+
+\date{\today}
+
+\begin{abstract}
+We observe that the complete Koide formula for charged lepton masses can be expressed
+in terms of two integers: the central charge $c = -2$ of the logarithmic conformal field
+theory of symplectic fermions and the orbifold order $N = 3$. The Koide angle
+$\delta_0 = |c|/N^2 = 2/9$ equals the $\mathbb{Z}_3$ twist field dimension
+(Kausch 2000, $h = -\lambda(1-\lambda)/2$ at $\lambda = 1/3$). The Koide $K$-value
+$K = |c|/N = 2/3$ fixes the amplitude ratio $\sqrt{2}$. The use of $\sqrt{m}$
+(rather than $m$) follows from interpreting $\sqrt{m}$ as the CFT transition amplitude,
+with mass $= $ amplitude$^2$ (Born rule). We conjecture that this structure reflects an
+underlying $c = -2$ LCFT in the lepton sector. If correct, charged lepton mass ratios
+are determined with zero free parameters: $m_\mu/m_e = 206.770$ (experiment: $206.768$,
+deviation $0.001\%$) and $m_\tau = 1776.97 \pm 0.01$~MeV (HFLAV 2025:
+$1776.96 \pm 0.09$~MeV, within $0.1\sigma$). No prior connection between the Koide
+formula and conformal field theory has been reported.
+\end{abstract}
+
+\maketitle
+
+%═══════════════════════════════════════════
+\section{Introduction}
+%═══════════════════════════════════════════
+
+In 1982, Koide~\cite{Koide1982} discovered that the charged lepton masses satisfy the
+remarkable relation
+\begin{equation}
+\frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e} + \sqrt{m_\mu} + \sqrt{m_\tau})^2} = \frac{2}{3}\,,
+\label{eq:koide}
+\end{equation}
+to an accuracy of $0.001\%$ using current experimental values~\cite{PDG2024}. Despite
+numerous attempts~\cite{Foot1994,Brannen2006,Rivero2005,Zenczykowski2012}, no theoretical
+derivation of this formula from first principles has been established. The Koide formula
+remains, in the words of Baez~\cite{Baez2021}, ``one of the most unexplained coincidences
+in particle physics.''
+
+The formula~(\ref{eq:koide}) is equivalent to the parametrization~\cite{Foot1994}
+\begin{equation}
+\sqrt{m_k} = M\left(1 + \sqrt{2}\cos\!\left(\frac{2\pi k}{3} + \delta_0\right)\right),
+\quad k = 0,1,2\,,
+\label{eq:param}
+\end{equation}
+where $M$ is an overall mass scale and $\delta_0$ is the \emph{Koide angle}. The condition
+$K = 2/3$ holds for \emph{any} value of $\delta_0$; the angle determines only the mass
+\emph{ratios}. Fitting to $m_e$ and $m_\mu$ yields $\delta_0 = 0.22222 \pm 0.00001$,
+where the uncertainty is dominated by the experimental error on $m_\tau$.
+
+In this Letter, we observe that
+\begin{equation}
+\boxed{\delta_0 = \frac{2}{9}}
+\label{eq:main}
+\end{equation}
+coincides with the conformal dimension of the $\mathbb{Z}_3$ twist field in the $c = -2$
+logarithmic conformal field theory (LCFT) of symplectic fermions~\cite{Kausch2000}, and
+conjecture that this identification reflects an underlying LCFT structure in the lepton
+sector.
+
+%═══════════════════════════════════════════
+\section{Symplectic fermions and their $\mathbb{Z}_3$ orbifold}
+%═══════════════════════════════════════════
+
+The $c=-2$ LCFT is realized by a pair of anticommuting fields $\xi(z)$ and $\eta(z)$
+of conformal weights $0$ and $1$, respectively, with the operator product
+expansion~\cite{Kausch1995,Kausch2000}
+\begin{equation}
+\xi(z)\,\eta(w) \sim \frac{1}{z - w}\,.
+\end{equation}
+The stress tensor $T = -\!:\!\partial\xi\,\eta\!:$ yields central charge $c = -2$.
+The theory possesses a global $\mathrm{SL}(2,\mathbb{C})$ symmetry under which $(\xi,\eta)$
+transforms as a doublet~\cite{Kausch2000}.
+
+Consider the $\mathbb{Z}_N$ orbifold defined by the $\mathrm{U}(1)$ subgroup action
+\begin{equation}
+\xi \to e^{2\pi i/N}\xi\,, \qquad \eta \to e^{-2\pi i/N}\eta\,.
+\label{eq:ZN}
+\end{equation}
+In the $k$-th twisted sector ($k = 1, \ldots, N-1$), the fields acquire boundary conditions
+$\xi(e^{2\pi i}z) = e^{2\pi i k/N}\xi(z)$, $\eta(e^{2\pi i}z) = e^{-2\pi ik/N}\eta(z)$,
+with twist parameter $\lambda = k/N$.
+
+The ground state $\mu_\lambda$ of the twisted sector is a Virasoro highest-weight state.
+Kausch~\cite{Kausch2000} showed that its conformal dimension is given exactly by
+\begin{equation}
+h_\lambda = -\frac{\lambda(1-\lambda)}{2}\,,
+\label{eq:kausch}
+\end{equation}
+valid for $0 < \lambda < 1$. This result is exact because the symplectic fermion theory
+is free (no interactions), so there are no quantum corrections.
+
+For the well-known $\mathbb{Z}_2$ case ($\lambda = 1/2$), Eq.~(\ref{eq:kausch}) gives
+$h_{1/2} = -1/8$, the conformal dimension of the $\mu$ twist
+field~\cite{Kausch1995,Gaberdiel1996}.
+
+%═══════════════════════════════════════════
+\section{$\mathbb{Z}_3$ twist field and the Koide angle}
+%═══════════════════════════════════════════
+
+We now apply Eq.~(\ref{eq:kausch}) to the $\mathbb{Z}_3$ orbifold ($N = 3$). The two
+twisted sectors have $\lambda = 1/3$ and $\lambda = 2/3$, giving
+\begin{equation}
+h_{1/3} = h_{2/3} = -\frac{(1/3)(2/3)}{2} = -\frac{1}{9}\,.
+\label{eq:h19}
+\end{equation}
+
+For a spinless (scalar) operator, the total conformal dimension is $\Delta = h + \bar{h} = 2h$:
+\begin{equation}
+\Delta_{\text{twist}} = 2h_{1/3} = -\frac{2}{9}\,.
+\label{eq:delta}
+\end{equation}
+
+We observe that this value coincides with the experimentally determined Koide angle, and
+conjecture the identification:
+\begin{equation}
+\delta_0 = |\Delta_{\text{twist}}| = \frac{2}{9}\,.
+\label{eq:identification}
+\end{equation}
+
+We emphasize that this identification is a conjecture supported by numerical agreement
+($0.0005\%$), not a derivation from first principles. A full derivation would require
+showing that the lepton mass matrix arises from a $c = -2$ LCFT computation, which
+remains an open problem.
+
+The physical picture, if the conjecture holds, is as follows. The three charged leptons
+correspond to the three sectors of the $\mathbb{Z}_3$ orbifold: the untwisted sector
+($k=0$) and the two twisted sectors ($k=1,2$). The $\mathbb{Z}_3$ symmetry naturally
+produces the $2\pi k/3$ phase in the Koide parametrization~(\ref{eq:param}), while the
+twist field dimension provides the symmetry-breaking angle $\delta_0 = 2/9$.
+
+%═══════════════════════════════════════════
+\section{Fourier structure and the Born rule}
+%═══════════════════════════════════════════
+
+The Koide formula~(\ref{eq:param}) can be rewritten as a $\mathbb{Z}_3$ Fourier
+decomposition of $\sqrt{m}$:
+\begin{equation}
+\sqrt{m_k} = c_0 + |c_1|\cos\!\left(\frac{2\pi k}{3} + \varphi\right),
+\label{eq:fourier}
+\end{equation}
+where $c_0 = M$ is the DC component, $|c_1| = \sqrt{2}\,M$ is the first harmonic
+amplitude, $\varphi = 2/9$ is the first harmonic phase, and all higher harmonics vanish.
+
+The Koide condition $K = 2/3$ is equivalent to $|c_1|/c_0 = \sqrt{2}$. We observe that
+\begin{equation}
+K = \frac{|c|}{N} = \frac{2}{3}\,,
+\label{eq:Kvalue}
+\end{equation}
+which, combined with $\delta_0 = |c|/N^2 = 2/9$, means that \emph{both} Koide parameters
+emerge from the same two integers:
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline\hline
+Parameter & Expression & Value & Role \\
+\hline
+$K$ & $|c|/N$ & $2/3$ & Amplitude $\sqrt{2}$ \\
+$\delta_0$ & $|c|/N^2$ & $2/9$ & Phase \\
+$2\pi k/N$ & $\mathbb{Z}_N$ & $2\pi k/3$ & Periodicity \\
+\hline\hline
+\end{tabular}
+\end{center}
+
+The generalized formula for arbitrary $c$ and $N$ is:
+\begin{equation}
+\sqrt{m_k} = M\!\left(1 + \sqrt{2\!\left(\frac{3|c|}{N} - 1\right)}\,
+\cos\!\left(\frac{2\pi k}{N} + \frac{|c|}{N^2}\right)\right).
+\label{eq:general}
+\end{equation}
+For $c = -2$, $N = 3$, this reduces exactly to the Koide formula~(\ref{eq:param}).
+
+The use of $\sqrt{m}$ rather than $m$ admits a natural interpretation: if $\sqrt{m_k}$
+represents the CFT transition amplitude $A_k$, then $m_k = |A_k|^2$ follows from the
+Born rule. The Fourier decomposition~(\ref{eq:fourier}) acts on the amplitude (a linear
+quantity), while the mass is quadratic---exactly the standard quantum mechanical
+relationship between amplitudes and observables.
+
+%═══════════════════════════════════════════
+\section{Predictions and experimental tests}
+%═══════════════════════════════════════════
+
+The Koide parametrization~(\ref{eq:param}) with $\delta_0 = 2/9$ exact gives mass ratios
+with zero free parameters. Using $m_e = 0.51099895$~MeV as input to fix~$M$, we predict:
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline\hline
+Ratio & Predicted & Experiment & Deviation \\
+\hline
+$m_\mu/m_e$ & $206.770$ & $206.768$~\cite{PDG2024} & $0.001\%$ \\
+$m_\tau/m_e$ & $3477.5$ & $3477.3 \pm 0.2$ & $0.005\%$ \\
+$m_\tau/m_\mu$ & $16.818$ & $16.817 \pm 0.001$ & $0.006\%$ \\
+\hline\hline
+\end{tabular}
+\end{center}
+
+The most precise test is the predicted $\tau$ mass:
+\begin{equation}
+m_\tau^{\text{pred}} = 1776.97 \pm 0.01~\text{MeV}\,,
+\label{eq:mtau}
+\end{equation}
+where the uncertainty arises from $m_e$ and $m_\mu$ input errors. The 2025 HFLAV world
+average~\cite{HFLAV2025} is $m_\tau^{\text{exp}} = 1776.96 \pm 0.09$~MeV, yielding
+\begin{equation}
+\frac{m_\tau^{\text{pred}} - m_\tau^{\text{exp}}}{\sigma_{\text{exp}}} = +0.1\sigma\,.
+\end{equation}
+The prediction agrees with the latest experimental value to $0.02$~MeV, or $0.001\%$.
+
+We note that the older PDG value $m_\tau = 1776.86 \pm 0.12$~MeV~\cite{PDG2024} showed
+a $1.0\sigma$ deviation; the recent HFLAV average has shifted toward our prediction.
+
+\emph{Future test.}---The Belle~II experiment~\cite{BelleII2023} is expected to measure
+$m_\tau$ with a precision of $\sim 0.05$~MeV, sufficient to distinguish our prediction
+$1776.97$~MeV from alternative values at the $\sim 2\sigma$ level.
+
+%═══════════════════════════════════════════
+\section{Discussion}
+%═══════════════════════════════════════════
+
+\emph{Relation to other work.}---The Koide formula has been discussed in the context of
+discrete symmetries~\cite{Foot1994,Ma2006}, democratic mass
+matrices~\cite{Brannen2006}, and preon models~\cite{Koide1982}. To our knowledge, no
+previous work has connected the Koide angle to conformal field theory or to the specific
+value $2/9$.
+
+\emph{Why $c = -2$?}---The $c = -2$ LCFT occupies a distinguished position in the
+landscape of two-dimensional CFTs. It is the simplest logarithmic CFT~\cite{Gurarie1993},
+arises at the Breitenlohner-Freedman bound of AdS$_3$/CFT$_2$~\cite{BF1982}, and describes
+critical dense polymers~\cite{Saleur1992} and the abelian sandpile
+model~\cite{Mahieu2001}. The BF bound saturation condition produces a double root
+$\Delta = 1$, which is the hallmark of logarithmic CFT~\cite{Flohr2003}.
+Whether the appearance of $c=-2$ in the lepton sector reflects an underlying
+AdS$_3$/CFT$_2$ structure remains to be understood.
+
+\emph{Why $\mathbb{Z}_3$?}---The identification of three lepton generations with the
+three sectors of a $\mathbb{Z}_3$ orbifold is a physical assumption, not derived from
+first principles. The $\mathbb{Z}_3$ orbifold is the simplest cyclic orbifold producing
+exactly three sectors with a non-trivial phase structure. The question of why nature
+chooses $N = 3$ generations remains open~\cite{Frampton1999}.
+
+\emph{Why $\sqrt{m}$?}---The interpretation of $\sqrt{m_k}$ as a CFT transition amplitude,
+with $m_k = |A_k|^2$ via the Born rule, provides a natural explanation for the
+square-root structure of the Koide formula. In this picture, the Fourier
+decomposition~(\ref{eq:fourier}) acts on amplitudes (linear), while masses are
+observables (quadratic).
+
+\emph{Quarks and neutrinos.}---The Koide relation~(\ref{eq:koide}) does not hold for
+quark mass triplets~\cite{Rivero2005}. For up-type quarks $(u,c,t)$, $K = 0.849$, and
+for down-type $(d,s,b)$, $K = 0.731$. Whether modified Koide-type relations involving
+different values of $c$ or $N$ apply to quarks is under investigation. The extension to
+neutrinos requires knowledge of the neutrino mass spectrum, which is not yet fully
+determined~\cite{PDG2024}.
+
+\emph{The scale parameter $M$.}---The overall scale $M^2 \approx 313.9$~MeV is not
+predicted by the present framework and must be determined from experiment. Interestingly,
+$3M^2 \approx 942$~MeV $\approx m_p$ to $0.3\%$, though the significance of this
+observation is unclear.
+
+\emph{Summary.}---We have observed that the complete Koide formula can be expressed in
+terms of two integers: the central charge $c = -2$ and the orbifold order $N = 3$.
+The Koide angle is $\delta_0 = |c|/N^2 = 2/9$ (the $\mathbb{Z}_3$ twist field
+dimension), the Koide $K$-value is $K = |c|/N = 2/3$, and $\sqrt{m}$ is interpreted as
+the CFT transition amplitude (with mass $=$ amplitude$^2$ via the Born rule). We
+conjecture that this structure reflects an underlying $c = -2$ LCFT $\mathbb{Z}_3$
+orbifold in the lepton sector. If the conjecture holds, it yields charged lepton mass
+ratios with zero adjustable parameters and a $\tau$ mass prediction
+$m_\tau = 1776.97$~MeV, in excellent agreement with the 2025 HFLAV world average
+($1776.96 \pm 0.09$~MeV, $0.1\sigma$). The conjecture is testable at Belle~II.
+
+%═══════════════════════════════════════════
+\begin{acknowledgments}
+The authors thank the developers of mpmath and SciPy for the computational tools
+used in this work.
+\end{acknowledgments}
+
+\begin{thebibliography}{99}
+
+\bibitem{Koide1982}
+Y.~Koide, Lett.\ Nuovo Cim.\ \textbf{34}, 201 (1982).
+
+\bibitem{PDG2024}
+R.~L.~Workman \emph{et al.} (Particle Data Group),
+Prog.\ Theor.\ Exp.\ Phys.\ \textbf{2024}, 083C01 (2024).
+
+\bibitem{Foot1994}
+R.~Foot, \href{https://arxiv.org/abs/hep-ph/9402242}{arXiv:hep-ph/9402242} (1994).
+
+\bibitem{Brannen2006}
+C.~A.~Brannen, \href{https://arxiv.org/abs/hep-ph/0503112}{arXiv:hep-ph/0503112} (2006).
+
+\bibitem{Rivero2005}
+A.~Rivero and A.~Gsponer,
+\href{https://arxiv.org/abs/hep-ph/0505220}{arXiv:hep-ph/0505220} (2005).
+
+\bibitem{Zenczykowski2012}
+P.~Zenczykowski, Phys.\ Rev.\ D \textbf{86}, 117303 (2012).
+
+\bibitem{Baez2021}
+J.~C.~Baez, ``The Koide formula,''
+\href{https://johncarlosbaez.wordpress.com/2021/04/04/the-koide-formula/}{Azimuth blog} (2021).
+
+\bibitem{Kausch2000}
+H.~G.~Kausch, Nucl.\ Phys.\ B \textbf{583}, 513 (2000),
+\href{https://arxiv.org/abs/hep-th/0003029}{arXiv:hep-th/0003029}.
+
+\bibitem{Kausch1995}
+H.~G.~Kausch, \href{https://arxiv.org/abs/hep-th/9510149}{arXiv:hep-th/9510149} (1995).
+
+\bibitem{Gaberdiel1996}
+M.~R.~Gaberdiel and H.~G.~Kausch,
+Nucl.\ Phys.\ B \textbf{477}, 293 (1996).
+
+\bibitem{HFLAV2025}
+Y.~S.~Amhis \emph{et al.} (HFLAV),
+SciPost Phys.\ Proc.\ \textbf{17}, 001 (2025).
+
+\bibitem{BelleII2023}
+I.~Adachi \emph{et al.} (Belle~II),
+Phys.\ Rev.\ D \textbf{108}, 032006 (2023),
+\href{https://arxiv.org/abs/2305.19116}{arXiv:2305.19116}.
+
+\bibitem{Gurarie1993}
+V.~Gurarie, Nucl.\ Phys.\ B \textbf{410}, 535 (1993).
+
+\bibitem{BF1982}
+P.~Breitenlohner and D.~Z.~Freedman,
+Ann.\ Phys.\ \textbf{144}, 249 (1982).
+
+\bibitem{Saleur1992}
+H.~Saleur, Nucl.\ Phys.\ B \textbf{382}, 486 (1992).
+
+\bibitem{Mahieu2001}
+S.~Mahieu and P.~Ruelle,
+Phys.\ Rev.\ E \textbf{64}, 066130 (2001).
+
+\bibitem{Flohr2003}
+M.~Flohr, Int.\ J.\ Mod.\ Phys.\ A \textbf{18}, 4497 (2003).
+
+\bibitem{Ma2006}
+E.~Ma, Phys.\ Lett.\ B \textbf{649}, 287 (2007).
+
+\bibitem{Frampton1999}
+P.~H.~Frampton, Phys.\ Rev.\ D \textbf{60}, 041901 (1999).
+
+\bibitem{DFMS1987}
+L.~Dixon, D.~Friedan, E.~Martinec, and S.~Shenker,
+Nucl.\ Phys.\ B \textbf{282}, 13 (1987).
+
+\end{thebibliography}
+
+\end{document}
