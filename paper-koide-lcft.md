@@ -1,6 +1,7 @@
 # Lepton mass ratios from the Z₃ twist field of c=-2 logarithmic CFT
 
-**[Authors], [Affiliations]**
+**wuko & Syn-claude**
+**SCOS-LAB (https://github.com/scos-lab)**
 
 ---
 
