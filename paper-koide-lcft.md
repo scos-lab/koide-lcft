@@ -83,6 +83,36 @@ where c = -2 is the central charge and N = 3 is the orbifold order. This express
 
 ---
 
+## 3.1 The Koide K-value and the Fourier structure
+
+The Koide formula can be rewritten as a Z₃ Fourier decomposition of √m:
+
+> **√m_k = c₀ + |c₁|·cos(2πk/3 + φ)**
+
+where c₀ = M (DC component), |c₁| = √2·M (first harmonic amplitude), φ = 2/9 (first harmonic phase), and all higher harmonics vanish. The Koide condition K = 2/3 is equivalent to |c₁|/c₀ = √2.
+
+We observe that this amplitude ratio also follows from c and N:
+
+> **K = |c| / N = 2/3**
+
+Combined with δ₀ = |c|/N², the entire Koide formula is determined by two integers:
+
+| Parameter | Expression | Value | Role |
+|-----------|-----------|-------|------|
+| K (Koide ratio) | \|c\|/N | 2/3 | Fixes amplitude √2 |
+| δ₀ (Koide angle) | \|c\|/N² | 2/9 | Fixes phase |
+| 2πk/N | Z_N symmetry | 2πk/3 | Fixes periodicity |
+
+The generalized Koide formula for arbitrary c and N is:
+
+> **√m_k = M · (1 + √(2·(3|c|/N − 1)) · cos(2πk/N + |c|/N²))**
+
+For c = -2, N = 3, this reduces exactly to the Koide formula. Both the √2 amplitude and the 2/9 phase emerge from the same two numbers.
+
+We conjecture that K = |c|/N, like δ₀ = |c|/N², reflects the structure of the c = -2 LCFT Z₃ orbifold. If confirmed, the Koide formula contains no unexplained parameters — everything follows from c and N.
+
+---
+
 ## 4. Predictions and experimental tests
 
 The Koide parametrization with δ₀ = 2/9 exact gives mass ratios with zero free parameters. Using m_e = 0.51099895 MeV as input to fix M, we predict:
