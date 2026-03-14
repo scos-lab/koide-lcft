@@ -7,7 +7,7 @@
 
 ## Abstract
 
-We show that the Koide angle---the single parameter determining charged lepton mass ratios in Koide's formula---equals the absolute value of the total conformal dimension of the Z₃ twist field in the c = -2 logarithmic conformal field theory of symplectic fermions. Specifically, the twist field dimension h = -λ(1-λ)/2 at λ = 1/3 gives h = -1/9, yielding a Koide angle δ₀ = |2h| = 2/9. This predicts lepton mass ratios with zero free parameters: m_μ/m_e = 206.770 (experiment: 206.768, deviation 0.001%) and m_τ = 1776.97 ± 0.01 MeV (HFLAV 2025: 1776.96 ± 0.09 MeV, within 0.1σ). No prior connection between the Koide formula and conformal field theory has been reported.
+We observe that the Koide angle---the single parameter determining charged lepton mass ratios in Koide's formula---numerically equals the absolute value of the total conformal dimension of the Z₃ twist field in the c = -2 logarithmic conformal field theory of symplectic fermions. Specifically, the twist field dimension h = -λ(1-λ)/2 at λ = 1/3 gives h = -1/9, yielding |2h| = 2/9, which matches the experimentally determined Koide angle to 0.0005%. We conjecture that this identification reflects an underlying c = -2 LCFT structure in the lepton sector. If correct, this predicts lepton mass ratios with zero free parameters: m_μ/m_e = 206.770 (experiment: 206.768, deviation 0.001%) and m_τ = 1776.97 ± 0.01 MeV (HFLAV 2025: 1776.96 ± 0.09 MeV, within 0.1σ). No prior connection between the Koide formula and conformal field theory has been reported.
 
 ---
 
@@ -67,11 +67,13 @@ For a spinless (scalar) operator, the total conformal dimension is Δ = h + h̄ 
 
 > **Δ_twist = 2h = -2/9**
 
-We identify the Koide angle with the absolute value of this dimension:
+We observe that this value coincides with the experimentally determined Koide angle, and conjecture the identification:
 
 > **δ₀ = |Δ_twist| = 2/9**
 
-The physical picture is as follows. The three charged leptons correspond to the three sectors of the Z₃ orbifold: the untwisted sector (k = 0) and the two twisted sectors (k = 1, 2). The Z₃ symmetry naturally produces the 2πk/3 phase in the Koide parametrization, while the twist field dimension provides the symmetry-breaking angle δ₀ = 2/9.
+We emphasize that this identification is a conjecture supported by numerical agreement (0.0005%), not a derivation from first principles. A full derivation would require showing that the lepton mass matrix arises from a c = -2 LCFT computation, which remains an open problem.
+
+The physical picture, if the conjecture holds, is as follows. The three charged leptons correspond to the three sectors of the Z₃ orbifold: the untwisted sector (k = 0) and the two twisted sectors (k = 1, 2). The Z₃ symmetry naturally produces the 2πk/3 phase in the Koide parametrization, while the twist field dimension provides the symmetry-breaking angle δ₀ = 2/9.
 
 Equivalently, noting that h_λ = c·λ(1-λ)/4 for c = -2, we can write
 
@@ -119,7 +121,7 @@ We note that the older PDG value m_τ = 1776.86 ± 0.12 MeV [2] showed a 1.0σ d
 
 **The scale parameter M.** The overall scale M² ≈ 313.9 MeV is not predicted by the present framework and must be determined from experiment. Interestingly, 3M² ≈ 942 MeV ≈ m_p to 0.3%, though the significance of this observation is unclear.
 
-**Summary.** We have shown that the Koide angle δ₀ = 2/9 is the absolute value of the total conformal dimension of the Z₃ twist field in the c = -2 LCFT, as given by Kausch's exact formula h_λ = -λ(1-λ)/2 at λ = 1/3. Combined with the Koide parametrization, this yields charged lepton mass ratios with zero adjustable parameters and a τ mass prediction in excellent agreement with the 2025 HFLAV world average. The prediction is testable at Belle II.
+**Summary.** We have observed that the Koide angle δ₀ = 2/9 coincides with the absolute value of the total conformal dimension of the Z₃ twist field in the c = -2 LCFT, as given by Kausch's exact formula h_λ = -λ(1-λ)/2 at λ = 1/3. We conjecture that this numerical coincidence reflects an underlying LCFT structure in the lepton sector. If the conjecture holds, it yields charged lepton mass ratios with zero adjustable parameters and a τ mass prediction in excellent agreement with the 2025 HFLAV world average. The conjecture is testable: Belle II's future m_τ measurement at ~0.05 MeV precision can confirm or falsify it.
 
 ---
 
