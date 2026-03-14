@@ -7,7 +7,9 @@
 
 ## Prediction
 
-$$m_\tau = 1776.97 \pm 0.01 \text{ MeV}$$
+```math
+m_\tau = 1776.97 \pm 0.01 \text{ MeV}
+```
 
 This prediction has **zero free parameters** for mass ratios. It is derived from the conformal dimension of the Z₃ twist field in the c=-2 logarithmic conformal field theory of symplectic fermions.
 
@@ -26,13 +28,17 @@ This prediction has **zero free parameters** for mass ratios. It is derived from
 
 The c=-2 LCFT (symplectic fermions) has an exact twist field dimension formula ([Kausch 2000, Nucl. Phys. B 583, eq. 23](https://arxiv.org/abs/hep-th/0003029)):
 
-$$h_\lambda = -\frac{\lambda(1-\lambda)}{2}$$
+```math
+h_\lambda = -\frac{\lambda(1-\lambda)}{2}
+```
 
 ### Step 2: Apply to Z₃ orbifold
 
 For the Z₃ orbifold (λ = 1/3):
 
-$$h_{1/3} = -\frac{(1/3)(2/3)}{2} = -\frac{1}{9}$$
+```math
+h_{1/3} = -\frac{(1/3)(2/3)}{2} = -\frac{1}{9}
+```
 
 Total (spinless) dimension: Δ = 2h = **-2/9**
 
@@ -40,11 +46,22 @@ Total (spinless) dimension: Δ = 2h = **-2/9**
 
 The Koide formula parametrizes charged lepton masses as:
 
-$$\sqrt{m_k} = M\left(1 + \sqrt{2}\cos\left(\frac{2\pi k}{3} + \delta_0\right)\right), \quad k=0,1,2$$
+```math
+\sqrt{m_k} = M\left(1 + \sqrt{2}\cos\left(\frac{2\pi k}{3} + \delta_0\right)\right), \quad k=0,1,2
+```
 
-We identify the Koide angle with the twist field dimension:
+We conjecture the identification of the Koide angle with the twist field dimension:
 
-$$\delta_0 = |\Delta_{\text{twist}}| = \frac{2}{9}$$
+```math
+\delta_0 = |\Delta_{\text{twist}}| = \frac{2}{9}
+```
+
+Both Koide parameters follow from two integers, c = -2 and N = 3:
+
+| Parameter | Expression | Value | Role |
+|-----------|-----------|-------|------|
+| K (Koide ratio) | \|c\|/N | 2/3 | Fixes amplitude √2 |
+| δ₀ (Koide angle) | \|c\|/N² | 2/9 | Fixes phase |
 
 This gives mass ratios with **zero free parameters**:
 
